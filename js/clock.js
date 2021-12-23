@@ -8,5 +8,5 @@ function displayClock () {
   clockEl.innerText =`${hour}:${minute}:${second}`;
 }
 
-displayClock();
+// displayClock();
 setInterval(displayClock, 1000);
