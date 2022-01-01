@@ -5,28 +5,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
   <title>Momentum App</title>
 </head>
 
 <body>
-  <form id="login-form" class="hidden">
-    <input required maxlength="15" type="text" placeholder="What is your name?" />
-    <input type="submit" value="Log In" />
-  </form>
-  <h1 id="greeting" class="hidden"></h1>
-  <h2 id="clock">00:00:00</h2>
-  <form id="todo-form">
-    <input type="text" placeholder="Write a To do and Press enter" required>
-  </form>
-  <ul id="todo-list"></ul>
-  <div id="quotes">
-    <span id="quote"></span>
-    <span id="author"></span>
-  </div>
-  <div id="weather">
-    <span></span>
-    <span></span>
-  </div>
+
+    <form id="login-form" class="hidden">
+      <input required maxlength="15" type="text" placeholder="What is your name?" />
+      <input type="submit" value="Log In" class="hidden" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <h2 id="clock">00:00:00</h2>
+    <div id="quotes">
+      <span id="quote"></span>
+      <span id="author"></span>
+    </div>
+    <form id="todo-form">
+      <input type="text" placeholder="Add task" required>
+    </form>
+    <ul id="todo-list"></ul>
+
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+
   <script src="./js/main.js"></script>
   <script src="./js/clock.js"></script>
   <script src="./js/quotes.js"></script>
